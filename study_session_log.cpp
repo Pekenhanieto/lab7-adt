@@ -117,10 +117,34 @@ int main()
     // ===== Resolve these TODOs later (Part E) =====
 
     // TODO (Part E): Create a StudySessionLog object and print whether it starts empty.
+
+    StudySessionLog log;
+    cout << "Is the study session log empty? " << boolalpha << log.isEmpty() << endl;
+
     // TODO (Part E): Add four dummy session durations and attempt to add a fifth.
+
+    log.addSession(57);
+    log.addSession(79);
+    log.addSession(63);
+    log.addSession(85);
+
     // TODO (Part E): Print the number of stored sessions and whether the fifth session was accepted.
+    
+    cout << "Number of stored sessions: " << log.size() << endl;
+    cout << "Is the study session log empty? " << boolalpha << log.isEmpty() << endl;
+
     // TODO (Part E): Print the total minutes and the longest stored session.
+
+    cout << "Total minutes: " << log.totalMinutes() << endl;
+    cout << "Longest session: " << log.longestSession() << endl;
+
     // TODO (Part E): Print descriptive English labels for all results.
+    
+    cout << "Description of results:" << endl;
+    cout << "- Number of stored sessions: " << log.size() << endl;
+    cout << "- Is the study session log empty? " << boolalpha << log.isEmpty() << endl;
+    cout << "- Total minutes: " << log.totalMinutes() << endl;
+    cout << "- Longest session: " << log.longestSession() << endl;
 
     return 0;
 }
